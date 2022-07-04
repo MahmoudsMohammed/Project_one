@@ -1,0 +1,100 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+:root {
+  --main-color: #10cab7;
+  --duration: 0.5s;
+}
+/* Make all Sections at same level */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* container width based on media */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rules */
+
+/* start header */
+header {
+  padding: 20px 0px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img {
+  width: 60px;
+}
+header .container .links {
+  position: relative;
+  z-index: 1;
+}
+header .container .links .spans {
+  width: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 2;
+}
+header .container .links .spans span {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #333;
+}
+header .container .links .spans span:nth-child(2) {
+  width: 60%;
+  transition: var(--duration);
+}
+header .container .links ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: calc(100% + 20px);
+  background-color: #f6f6f6;
+  min-width: 200px;
+  display: none;
+}
+header .container .links ul::after {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color: #f6f6f6;
+  top: -20px;
+  right: 5px;
+}
+header .container .links ul li:not(:last-child) {
+  border-bottom: 1px solid #dadada;
+}
+header .container .links ul a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+}
+/* end header */
