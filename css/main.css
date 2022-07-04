@@ -88,8 +88,14 @@ header .container .links ul::after {
   top: -20px;
   right: 5px;
 }
+header .container .links ul li {
+  transition: var(--duration);
+}
 header .container .links ul li:not(:last-child) {
   border-bottom: 1px solid #dadada;
+}
+header .container .links ul li:hover {
+  padding-left: 10px;
 }
 header .container .links ul a {
   display: block;
@@ -98,3 +104,31 @@ header .container .links ul a {
   padding: 15px;
 }
 /* end header */
+/* strat landing */
+.landing {
+  background-image: url('../image/landing.jpg');
+  background-size: cover;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .text {
+  text-align: center;
+  width: 300px;
+}
+.landing .text h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--main-color);
+}
+.landing .text p {
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 0px;
+}
+/* end landing */
