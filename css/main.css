@@ -256,3 +256,37 @@ header .container .links ul a {
   }
 }
 /* end services */
+/* strat portfolio */
+.portfolio{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.portfolio .container{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+  gap: 30px;
+}
+.portfolio .container .card{
+  background-color: white;
+}
+.portfolio .container .card img{
+  max-width: 100%;
+}
+.portfolio .container .card .text{
+  text-align: left;
+  padding: 20px;
+}
+.portfolio .container .card .text h4{
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.portfolio .container .card .text p{
+  margin-bottom: 0px;
+  line-height: 1.8;
+  color: var(--paragraph-color);
+  font-size: 16px;
+}
+/* end portfolio */
