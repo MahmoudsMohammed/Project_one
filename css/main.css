@@ -4,6 +4,10 @@ body {
 :root {
   --main-color: #10cab7;
   --duration: 0.5s;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --secondary-color: #2c4755;
+  --paragraph-color: #777;
 }
 /* Make all Sections at same level */
 .container {
@@ -132,3 +136,29 @@ header .container .links ul a {
   margin-top: 0px;
 }
 /* end landing */
+/* start features */
+.features {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.features .container .card {
+  text-align: center;
+}
+.features .container .card i {
+  color: var(--main-color);
+}
+.features .container .card h3 {
+  font-weight: 800;
+}
+.features .container .card p {
+  line-height: 1.8;
+  color: var(--paragraph-color);
+  font-size: 18px;
+}
+/* end features */
