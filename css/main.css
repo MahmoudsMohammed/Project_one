@@ -290,3 +290,84 @@ header .container .links ul a {
   font-size: 16px;
 }
 /* end portfolio */
+/* strat about */
+.about{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.about .container{
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.about .container .image{
+  width: 250px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.about .container .image::after{
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 100px);
+  left: -20px;
+  top: -50px;
+  z-index: -1;
+  display: none;
+}
+.about .container .image::before{
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 100px;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  right: -120px;
+  top: -50px;
+  z-index: -1;
+  display: none;
+}
+.about img{
+  width: 100%;
+}
+.about .container .text{
+  text-align: center;
+}
+.about .container .text p:first-of-type{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.about .container .text p:last-of-type{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--paragraph-color);
+}
+.about .container .text hr{
+  /* make align work because hr is block */
+  /* align working with inline or inline-block */
+  display: inline-block;
+  background-color: var(--main-color);
+  width: 50%;
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .about .container{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .about .container .text{
+    text-align: left;
+    width: calc(100% - 500px);
+  }
+  .about .container .image::before,
+  .about .container .image::after{
+    display: block;
+  }
+}
+/* end about */
