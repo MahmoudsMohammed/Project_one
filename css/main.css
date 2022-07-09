@@ -9,6 +9,9 @@ body {
   --secondary-color: #2c4755;
   --paragraph-color: #777;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* Make all Sections at same level */
 .container {
   margin-left: auto;
@@ -371,3 +374,58 @@ header .container .links ul a {
   }
 }
 /* end about */
+/* strat contact */
+.contact{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.contact .text{
+  margin-top: 60px;
+  text-align: center;
+}
+.contact .text h2{
+  font-size: 25px;
+  color: var(--secondary-color);
+  font-weight: 800;
+  word-spacing: -2px;
+  margin-bottom: 15px;
+}
+.contact .text a{
+  color: var(--main-color);
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+}
+.contact .text .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .text .icons i{
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .contact .text h2,
+  .contact .text a{
+    font-size: 35px;
+  }
+}
+/* end contact */
+/* strat footer */
+.footer{
+  padding: 20px 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.footer p {
+  margin: 10px;
+}
+.footer p span{
+  color: var(--main-color);
+  font-weight: 600;
+}
+/* end footer */
