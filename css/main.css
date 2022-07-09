@@ -410,3 +410,19 @@ header .container .links ul a {
   }
 }
 /* end contact */
+/* strat footer */
+.footer{
+  padding: 20px 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.footer p {
+  margin: 10px;
+}
+.footer p span{
+  color: var(--main-color);
+  font-weight: 600;
+}
+/* end footer */
