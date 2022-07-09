@@ -9,6 +9,9 @@ body {
   --secondary-color: #2c4755;
   --paragraph-color: #777;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* Make all Sections at same level */
 .container {
   margin-left: auto;
